@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/../../CV/.idea/CV.iml" filepath="$PROJECT_DIR$/../../CV/.idea/CV.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../../../Engineering/djiango_templates_2/djiango_templates/.idea/djiango_templates.iml" filepath="$PROJECT_DIR$/../../../Engineering/djiango_templates_2/djiango_templates/.idea/djiango_templates.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/exercises.iml" filepath="$PROJECT_DIR$/.idea/exercises.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../../../Engineering/dbpractice/project/.idea/project.iml" filepath="$PROJECT_DIR$/../../../Engineering/dbpractice/project/.idea/project.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/opencv_python_exercises.iml" filepath="$PROJECT_DIR$/.idea/opencv_python_exercises.iml" />
     </modules>
   </component>
 </project>
