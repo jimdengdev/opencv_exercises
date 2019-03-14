@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://D:/../CV/Tensorflow/.idea/Tensorflow.iml" filepath="D:/../CV/Tensorflow/.idea/Tensorflow.iml" />
+      <module fileurl="file://D:/lectures/Engineering/django_templates_4/django_templates_4/.idea/django_templates.iml" filepath="D:/lectures/Engineering/django_templates_4/django_templates_4/.idea/django_templates.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/opencv_python_exercises.iml" filepath="$PROJECT_DIR$/.idea/opencv_python_exercises.iml" />
     </modules>
   </component>

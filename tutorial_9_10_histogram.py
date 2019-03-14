@@ -2,6 +2,7 @@ import cv2 as cv
 import matplotlib.pyplot as plt
 import numpy as np
 
+
 def plot_demo(image):
     plt.hist(image.ravel(), 256, [0, 256])  # image.ravel()将图像展开，256为bins数量，[0, 256]为范围
     plt.show()
@@ -12,7 +13,10 @@ def image_hist(image):
     for i, color in enumerate(color):
 
         # 计算出直方图，calcHist(images, channels, mask, histSize(有多少个bin), ranges[, hist[, accumulate]]) -> hist
+        # hist 是一个 256x1 的数组，每一个值代表了与该灰度值对应的像素点数目。
+
         hist = cv.calcHist(image, [i], None, [256], [0, 256])
+        print(hist.shape)
         plt.plot(hist, color=color)
         plt.xlim([0, 256])
     plt.show()
@@ -61,12 +65,13 @@ src = cv.imread("rice.png")  # 读入图片放进src中
 cv.namedWindow("demo")  # 创建窗口
 cv.imshow("demo", src)  # 将src图片放入该创建的窗口中
 # plot_demo(src)
-# image_hist(src)
+image_hist(src)
+
 # equalHist_demo(src)
 image1 = cv.imread("rice.png")
 image2 = cv.imread("noise_rice.png")
 
-create_rgb_demo(image1)
+# create_rgb_demo(image1)
 # cv.imshow("image1", image1)
 # cv.imshow("image2", image2)
 # hist_compare(image1=image1, image2=image2)

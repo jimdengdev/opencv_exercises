@@ -6,6 +6,7 @@ import matplotlib.pyplot as plt
 def hist2d_demo(image):
     hsv = cv.cvtColor(image, cv.COLOR_BGR2HSV)
     hist = cv.calcHist([image], [0, 1], None, [180, 360], [0, 180, 0, 256])  # 计算直方图
+    print(hist.shape)
     # cv.imshow("hist2d_demo", hist)
     plt.imshow(hist, interpolation="nearest")  # 直方图显示
     plt.title("2D Histogram")
@@ -17,6 +18,18 @@ def hist2d_demo(image):
 # 同样再使用目标的直方图做反向投影之前我们应该先对其做归一化处理。
 # 返回的结果是一个概率图像
 def back_projection_demo():
+    """
+    反向投影可以用来做图像分割，或者在图像中找寻我们感兴趣的部分。
+    它会输出与输入图像（待搜索）同样大小的图像，其中的每一个像素值代表了输入图像上对应点属于目标对象的概率。
+    输出图像中像素值越高（越白）的点就越可能代表我们要搜索的目标 （在输入图像所在的位置）。
+    直方图投影经常与camshift 算法等一起使用。
+    步骤：
+    1. 为一张包含我们要查找目标的图像创建直方图，我们要查找的对象要尽量占满这张图像。
+        最好使用颜色直方图，因为一个物体的颜色要比它的灰 度能更好的被用来进行图像分割与对象识别。
+    2. 们再把这个颜色直方图投 影到输入图像中寻找我们的目标，
+        也就是找到输入图像中的每一个像素点的像素值在直方图中对应的概率，这样我们就得到一个概率图像。
+    3. 设置适当的阈值对概率图像进行二值化
+    """
     sample = cv.imread("roi.png")
     target = cv.imread("CrystalLiu3.jpg")
     roi_hsv = cv.cvtColor(sample, cv.COLOR_BGR2HSV)
