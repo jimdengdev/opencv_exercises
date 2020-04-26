@@ -54,7 +54,7 @@ def threshold_simple(image):
 def threshold_adaptive(image):
     img = cv.cvtColor(image, cv.COLOR_BGR2GRAY)
     # 中值滤波
-    img = cv.medianBlur(img,5)
+    img = cv.medianBlur(img, 5)
 
     ret, th1 = cv.threshold(img, 127, 255, cv.THRESH_BINARY)
     # 11 为 Block size, 2 为 C 值

@@ -31,9 +31,10 @@ def laplace_demo(image):  # 注意：图片必须是满足2^n这种分辨率
             lpls = cv.subtract(pyramid_images[i-1], expand)
             cv.imshow("laplace_demo"+str(i), lpls)
 
+
 if __name__ == '__main__':
 
-    src = cv.imread("../images/lena.jpg")  # 读入图片放进src中
+    src = cv.imread(r"./images/lena.jpg")  # 读入图片放进src中
     cv.imshow("demo", src)  # 将src图片放入该创建的窗口中
     # pyramid_demo(src)
     laplace_demo(src)

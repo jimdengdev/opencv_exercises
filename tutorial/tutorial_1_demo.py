@@ -43,13 +43,14 @@ def draw_circle(event, x, y, flags, param):
         # else:
         #     cv.circle(img, (x, y), 5, (0, 0, 255), -1)
 
+
 if __name__ == '__main__':
     img = cv.imread("../images/Crystal.jpg")
     cv.namedWindow("image")
     cv.setMouseCallback('image', draw_circle)
-    while(1):
-        cv.imshow('image',img)
-        k = cv.waitKey(1)&0xFF
+    while True:
+        cv.imshow('image', img)
+        k = cv.waitKey(1) & 0xFF
         if k == ord('m'):
             mode = not mode
         elif k == 27:

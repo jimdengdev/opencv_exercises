@@ -28,6 +28,7 @@ def template_demo():
         cv.rectangle(target, tl, br, (0, 0, 255), 2)  # tl为左上角坐标，br为右下角坐标，从而画出矩形
         cv.imshow("match-"+np.str(md), target)
 
+
 if __name__ == '__main__':
 
     src = cv.imread("../images/CrystalLiu1.jpg")  # 读入图片放进src中

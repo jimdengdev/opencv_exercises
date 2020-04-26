@@ -2,6 +2,31 @@
 ## 视频地址：https://www.bilibili.com/video/av24998616
 ### 代码主要是跟着贾志刚老师一行一行敲出来的。绝大部分API都查了资料、加了注释，基本上每行要注释的代码都注释了。
 
+#### 下面是一些问题与解答，大家想要补充或者有什么疑问可以在Github上发issue或者b站发消息给我
+
+### 疑问与解答：
+0. github代码下载报错或者下载后解压报错
+    - 解答：可以在项目"Clone or download"中选择https方式，用本地git工具下载：git clone https://github.com/Betterming/opencv_exercises.git
+    - 方便大家下载使用，提供本项目压缩包链接：[opencv-exercises](https://cloud.189.cn/t/ZvENb2bE7BRf) （访问码：my7k）
+1. 找不到包：ModuleNotFoundError：No module named 'cv2'
+    - 解决：首先要安装opencv包  pip install opencv-python，若还没有解决，需要在pycharm中引入解释器环境，setting->Project Interpreter 点击Project Interpreter右侧锯齿选择python环境，可能需要重启pycharm
+2. 报错：error: (-215:Assertion failed) size.width>0 && size.height>0 in function 'cv::imshow' 
+    - 解决： 这种问题一般是因为图片/视频的路径有问题，路径做好不能有中文，注意不同系统之间路径可能表示不一样，可以在路径字符串前面加一个字符r
+3. 验证码那节报错：raise TesseractNotFoundError() pytesseract.pytesseract.TesseractNotFoundError: tesseract is not installed or it's not in your path
+    - 解答：不同系统采用不同策略：
+    ```cmd
+        On Linux
+            sudo apt update
+            sudo apt install tesseract-ocr
+            sudo apt install libtesseract-dev
+        On Mac
+            brew install tesseract
+        On Windows
+            先下载tesseract包：https://github.com/UB-Mannheim/tesseract/wiki. 
+            然后修改源码pytesseract.py中tesseract_cmd指向的路径：tesseract_cmd = 'C:\\Program Files (x86)\\Tesseract-OCR\\tesseract.exe'
+    ```
+
+
 # 目录
 1. 概述与环境  tutorial_1_demo
 2. 图像和视频读取与保存  tutorial_1_RW
