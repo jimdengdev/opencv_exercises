@@ -7,7 +7,7 @@
 ### 疑问与解答：
 0. github代码下载报错或者下载后解压报错
     - 解答：可以在项目"Clone or download"中选择https方式，用本地git工具下载：git clone https://github.com/Betterming/opencv_exercises.git
-    - 方便大家下载使用，提供本项目压缩包链接：[opencv-exercises](https://cloud.189.cn/t/ZvENb2bE7BRf) （访问码：my7k）
+    - 方便大家下载使用，提供本项目压缩包链接：https://cloud.189.cn/t/zqimUjMVruMb（访问码：lk6h）
 1. 找不到包：ModuleNotFoundError：No module named 'cv2'
     - 解决：首先要安装opencv包  pip install opencv-python，若还没有解决，需要在pycharm中引入解释器环境，setting->Project Interpreter 点击Project Interpreter右侧锯齿选择python环境，可能需要重启pycharm
 2. 报错：error: (-215:Assertion failed) size.width>0 && size.height>0 in function 'cv::imshow' 
