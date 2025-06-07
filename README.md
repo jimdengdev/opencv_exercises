@@ -55,3 +55,6 @@
 25. 分水岭算法  tutorial_25_watershed
 26. 人脸检测  tutorial_26_face_detection
 27. 数字验证码识别  tutorial_27_recognization
+
+
+[![Powered by DartNode](https://dartnode.com/branding/DN-Open-Source-sm.png)](https://dartnode.com "Powered by DartNode - Free VPS for Open Source")
