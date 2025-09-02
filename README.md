@@ -59,7 +59,8 @@
 
 [![Powered by DartNode](https://dartnode.com/branding/DN-Open-Source-sm.png)](https://dartnode.com "Powered by DartNode - Free VPS for Open Source")
 
-CDN acceleration and security protection for this project are sponsored by Tencent EdgeOne.
-![image](https://github.com/user-attachments/assets/fc4e7cdd-c089-4beb-860d-ef305facf918)
-[Best Asian CDN, Edge, and Secure Solutions - Tencent EdgeOne](https://edgeone.ai/?from=github)
+"本项目 CDN 加速及安全防护由 Tencent EdgeOne 赞助：EdgeOne 提供长期有效的免费套餐，包含不限量的流量和请求，覆盖中国大陆节点，且无任何超额收费，感兴趣的朋友可以去 EdgeOne 官网获取"
+[亚洲最佳CDN、边缘和安全解决方案 - Tencent EdgeOne](https://edgeone.ai/zh?from=github)
+亚洲最佳CDN、边缘和安全解决方案 - Tencent EdgeOne
+<img width="2163" height="308" alt="image" src="https://github.com/user-attachments/assets/350c4094-886e-4321-9642-3e15303fa60e" />
 
